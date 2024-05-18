@@ -69,3 +69,14 @@ details {
   text-shadow: 5px 2px 0 red;
 }
 
+summary {
+  color: yellow;
+  list-style: none; /* Elimina la lista de estilo que incluye la flecha por defecto */
+}
+summary::-webkit-details-marker {
+  display: none; /* Oculta el marcador en navegadores basados en WebKit (como Chrome y Safari) */
+}
+
+summary::marker {
+  display: none; /* Oculta el marcador en otros navegadores que soportan la pseudoclase ::marker */
+}
